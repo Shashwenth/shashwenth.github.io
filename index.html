@@ -1,0 +1,456 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+    .dropdown-submenu {
+        position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+        }
+    .jumbotron-image{
+        background-image: url(static/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 500px;
+        margin-top: 0px;
+    }
+
+    .card-deck{
+        margin-top: -150px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .card-header{
+        font-weight: 800;
+    }
+
+    .card-title{
+        font-size: 24px;
+        font-weight: 200;
+        color: rgb(130, 128, 127);
+    }
+    .carousel-control-next,
+    .carousel-control-prev{
+        filter: invert(100%);
+    }
+
+</style>
+
+<body>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./static/styles.css">
+
+    <header id="header" class="fixed-top">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+  
+        <h1 class="logo me-auto me-lg-0"><a href="index.html">Shash</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a href="#hero" class="nav-link"><i class="bi bi-house navicon"></i>Home</a></li>
+            <li><a href="#about" class="nav-link"><i class="bi bi-person navicon"></i> About</a></li>
+            <li><a href="#experience" class="nav-link"><i class="bi bi-laptop-fill"></i> Experience</a></li>
+            <li><a href="#My_Works" class="nav-link"><i class="bi bi-images navicon"></i> Works</a></li>
+            <li><a href="#education" class="nav-link"><i class="bi bi-file-earmark-text navicon"></i> Education</a></li>
+            <li><a href="#resume" class="nav-link"><i class="bi bi-hdd-stack navicon"></i> Resume</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        
+  
+        <div class="header-social-links">
+        </div>
+  
+      </div>
+  
+    </header>
+
+    <section class="section  dark-background hero fade-effect" id="hero">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Shashwenth Muralidharan</h2>
+        <p>I'm <span class="typed" data-typed-items=""></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section>
+
+
+    <section class="section about light-background fade-effect" id="about">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title">
+          <h2 class="text-center">ABOUT ME</h2>
+        </div>
+        
+        <div class="text-center">
+          <span>
+            Hi, I am Shashwenth Muralidharan, and I am an entry-level software engineer. I recently graduated from Rutgers University - 
+            New Brunswick with a Master's degree in Computer Science, achieving a GPA of 3.87. I am really interested in backend development
+            and database administration. That doesn't mean I do not enjoy front-end development. I like to call myself a backend engineer 
+            who can work with frontend frameworks. I am also passionate about personal growth. Every opportunity for me is a chance to grow 
+            both professionally and personally. 
+          </span>
+        </div>
+        <br>
+        <div class="text-center">
+          <h4 class="text-muted">Technical Skills</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Programming Languages</th>
+              <th scope="col">Frameworks</th>
+              <th scope="col">Databases</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Java</td>
+              <td>SpringBoot</td>
+              <td>MySQL</td>
+              
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>React. Js</td>
+              <td>Spring JPA</td>
+              
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Node.js</td>
+              <td>H2 Database</td>
+            </tr>
+            <tr>
+              <td>C Programming</td>
+              <td>Bootstrap CSS</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </section>
+    
+
+
+    <section class="education-section dark-background section fade-effect" id="experience">
+      <div class="container">
+        <div class="section-title">
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <span class="date">Feb, 2021 - Mar, 2021</span>
+              <h3>SmartKnower</h3>
+              <p><strong>Software Engineering Intern</strong></p>
+              <p>As an Intern I assisted in developing and managing API's and performing Unit tests of these functionalites. Furthermore, involved in Agile development practices during the development of the application. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-background fade-effec" style="min-height: 100vh;" id="My_Works">
+    <div class="container text-center" style="position: relative;">
+      <div class="section-title">
+        <h2 class="text-center">RECENT WORKS</h2>
+      </div>
+    </div>
+    <div class="container px-3 py-3">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/survey.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Survey Application</h5>
+              <p class="card-text">Using React and Spring Boot to create an application that allows users to post surveys and record responses</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/Shashwenth/Survey-Application" target="_blank">Link</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/thread.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Custom Pthread, Malloc and File System</h5>
+              <p class="card-text">Created a C package that allows Management of Threads, Memory Management, Scheduling and File System mamagement</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/Shashwenth/Thread-Implementation-Duplication-with-Scheduling-umalloc-and-File-System-" target="_blank">Link</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/book.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">MyBookPal</h5>
+              <p class="card-text">MyBookPal is a Software Solution designed in JavaScript and served using Node.js that is designed to streamline and enhance the operations of a modern bookstore.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/Shashwenth/MyBookPal" target="_blank">Link</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-3 py-3">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/auction.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Auction Website</h5>
+              <p class="card-text">Java Full Stack application using JSP's, MySQL and JDBC to manage an Auction website that also has features to generate automated reports. </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/Shashwenth/Auction-Website" target="_blank">Link</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/landing.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Landing Pages</h5>
+              <p class="card-text">In this front-end project I have developed landing pages using Bootstrap that allows users to clone them and use for their own designs</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/Shashwenth/BootStrap" target="_blank">Link</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./static/crypto.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Crypto Stock Prediction In Django</h5>
+              <p class="card-text">Using Django, Yahoo Finance and ARIMA model developed this webpage to monitor and predict stock market prices of CryptoCurrencies.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"><a href="https://github.com/Shashwenth/Stock_Prediction_Website_In_Django" target="_blank">Link</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="education-section dark-background section fade-effect" id="education">
+    <div class="container">
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <span class="date">AUG, 2022 - MAY, 2024</span>
+            <h3>Rutgers University</h3>
+            <p><strong>Master of Science in Computer Science</strong></p>
+            <p>Relevant Courses: Advanced Algorithms, Machine Learning, Distributed Systems, Cloud Computing</p>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <span class="date">AUG, 2018 - MAY, 2022</span>
+            <h3>Sri Sairam Engineering College</h3>
+            <p><strong>Bachelor of Technology in Computer Science and Engineering</strong></p>
+            <p>Relevant Courses: Data Structures, Object-Oriented Programming, Database Management Systems, Web Development</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+  <section class="section light-background fade-effect" id="resume">
+    <div class="section-title"><h2>My Resume</h2></div>
+    <div class="pdf-container">
+        <iframe src="https://drive.google.com/file/d/1Vf4B7aTiKXidYeocZUfvFDxQmMa1ez0l/preview" width="100%" height="600px" allow="autoplay"></iframe>
+    </div>
+    <div class="pdf-controls">
+        <a href="https://drive.google.com/uc?export=download&id=1Vf4B7aTiKXidYeocZUfvFDxQmMa1ez0l" class="download-btn">Download PDF</a>
+    </div>
+</section>
+
+<footer class="dark-background fade-effect">
+  <div class="p-3 text-center text-muted">Shashwenth Muralidharan</div>
+</footer>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pjaaA8dDz/Smfj0PO7RsmLr8z4flBpkDD8n5J/jpRrmzX4+jpV4ZG8z4xMG7AT2x"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+      <script>
+        var typed = new Typed('.typed', {
+          strings: [ "Software Engineer", "Java Developer", "Full Stack Enthusiast"],
+          typeSpeed: 50,
+          backSpeed: 50,
+          backDelay: 2000,
+          loop: true
+        });
+      </script>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('.fade-effect');
+        
+        function checkFade() {
+          sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const sectionBottom = section.getBoundingClientRect().bottom;
+            const windowHeight = window.innerHeight;
+            
+            if (sectionTop < windowHeight * 0.75 && sectionBottom > 0) {
+              section.classList.add('fade-in');
+            } else {
+              section.classList.remove('fade-in');
+            }
+          });
+        }
+        
+        window.addEventListener('scroll', checkFade);
+        checkFade(); // Check on initial load
+      });
+      </script>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const pdfEmbed = document.querySelector('embed');
+    const zoomInBtn = document.getElementById('zoomIn');
+    const zoomOutBtn = document.getElementById('zoomOut');
+    let currentZoom = 100;
+
+    zoomInBtn.addEventListener('click', function() {
+        currentZoom += 25;
+        pdfEmbed.style.width = `${currentZoom}%`;
+    });
+
+    zoomOutBtn.addEventListener('click', function() {
+        if (currentZoom > 100) {
+            currentZoom -= 25;
+            pdfEmbed.style.width = `${currentZoom}%`;
+        }
+    });
+});
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+  const navbar = document.querySelector('#navbar');
+  
+  mobileNavToggle.addEventListener('click', function() {
+    navbar.classList.toggle('navbar-mobile');
+    this.classList.toggle('bi-list');
+    this.classList.toggle('bi-x');
+  });
+  
+  document.querySelectorAll('.navbar .dropdown > a').forEach(function(dropdownToggle) {
+    dropdownToggle.addEventListener('click', function(e) {
+      if (navbar.classList.contains('navbar-mobile')) {
+        e.preventDefault();
+        this.nextElementSibling.classList.toggle('dropdown-active');
+      }
+    });
+  });
+});
+
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('section');
+  const offset = 100; // Adjust this value as needed
+
+  // Function to handle smooth scrolling
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Remove active class from all links
+      navLinks.forEach(link => link.classList.remove('active'));
+      
+      // Add active class to the clicked link
+      this.classList.add('active');
+      
+      // Scroll to the corresponding section with offset
+      const sectionId = this.getAttribute('href');
+      const targetSection = document.querySelector(sectionId);
+      const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - offset;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Function to update active link on scroll
+  function onScroll() {
+    let currentSection = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - offset;
+      const sectionHeight = section.offsetHeight;
+      
+      if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+    
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${currentSection}`) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', onScroll);
+  onScroll(); // Call onScroll to set the initial active link
+});
+
+
+      </script>
+</body>
+<script>
+    $('.dropdown-submenu > a').on("click", function(e) {
+    var submenu = $(this);
+    $('.dropdown-submenu .dropdown-menu').removeClass('show');
+    submenu.next('.dropdown-menu').addClass('show');
+    e.stopPropagation();
+});
+
+$('.dropdown').on("hidden.bs.dropdown", function() {
+    // hide any open menus when parent closes
+    $('.dropdown-menu.show').removeClass('show');
+});
+</script>
+</html>
