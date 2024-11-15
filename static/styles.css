@@ -1,49 +1,55 @@
 :root {
-    --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --heading-font: "Raleway",  sans-serif;
-    --nav-font: "Poppins",  sans-serif;
-  }
-  
-  /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-  :root { 
-    --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-    --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-    --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-    --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-    --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-    --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-  }
-  
-  /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-  :root {
-    --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
-    --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-    --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
-    --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-    --nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
-    --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-  }
-  
-  /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-  
-  .light-background {
-    --background-color: #f4fafd;
-    --surface-color: #ffffff;
-  }
-  
-  .dark-background {
-    --background-color: #040b14;
-    --default-color: #ffffff;
-    --heading-color: #ffffff;
-    --surface-color: #151f2b;
-    --contrast-color: #ffffff;
-  }
-  
-  /* Smooth scroll */
-  :root {
-    scroll-behavior: smooth;
-  }
-  
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+}
+
+/* Global Colors */
+:root {
+  --background-color: #ffffff; /* Background color for the entire website */
+  --default-color: #272829; /* Default text color */
+  --heading-color: #050d18; /* Heading and title color */
+  --accent-color: #149ddd; /* Accent color */
+  --surface-color: #ffffff; /* Background color for boxed elements */
+  --contrast-color: #ffffff; /* Contrast color for text */
+}
+
+/* Adjusted Nav Menu Colors */
+:root {
+  --nav-color: #a8a9b4; /* Default color for nav menu links */
+  --nav-hover-color: #ffffff; /* Hover color for nav menu links */
+  --nav-mobile-background-color: #121a26; /* Darker mobile nav background */
+  --nav-dropdown-background-color: #121a26; /* Darker background for dropdown items */
+  --nav-dropdown-color: #a8a9b4; /* Default color for dropdown menu links */
+  --nav-dropdown-hover-color: #ffffff; /* Hover color for dropdown links */
+}
+
+/* Adjusted Light Background */
+/* Light Background */
+.light-background {
+  --background-color: #C0CBD1; /* Softer light background - Light Grayish Blue */
+  --surface-color: #f5f5f5; /* White background for cards, sections, or boxed elements */
+  --default-color: #37474F; /* Darker text color for better contrast on light backgrounds (Blue Gray) */
+  --heading-color: #263238; /* Deep Blue-Gray for headings - not too harsh, but still readable */
+  --accent-color: #00695C; /* A slightly muted teal color for accents - stands out without being too bold */
+  --contrast-color: #ffffff; /* Deep Blue-Gray for headings - not too harsh, but still readable */
+}
+
+/* Dark Background */
+.dark-background {
+  --background-color: #2c3e50; /* Softer muted dark blue - not too dark, still modern */
+  --default-color: #ecf0f1; /* Light gray text color for readability on dark backgrounds */
+  --heading-color: #f1f2f6; /* Very light gray/white for headings to stand out against the dark background */
+  --surface-color: #34495e; /* Slightly lighter dark gray-blue for cards or boxed sections */
+  --contrast-color: #ffffff; /* High contrast color for key elements like buttons or links */
+}
+
+
+/* Smooth Scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
   /*--------------------------------------------------------------
   # General Styling & Shared Classes
   --------------------------------------------------------------*/
@@ -524,7 +530,7 @@
 
 .education-section {
   padding: 100px 0;
-  background-color: #0d0e0e;
+  background-color: var(--background-color) ;
 }
 
 .section-title {
@@ -685,8 +691,8 @@
 
 
 .fade-effect {
-  opacity: 0.55;
-  transition: opacity 0.85s ease-in-out;
+  opacity: 0.85;
+  transition: opacity 1s ease-in-out;
 }
 
 .fade-in {
@@ -738,25 +744,85 @@
 }
 
 /* Card styling */
+/* General card styling */
 .card {
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #B0BEC5; /* Softer border color to match the light background */
+  border-radius: 8px; /* Smooths the corners of the card */
+  background-color: var(--surface-color); /* Ensures cards have the correct surface color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Light shadow for cards */
 }
 
+/* Card image styling */
 .card-img-top {
   flex-shrink: 0;
   width: 100%;
   height: 200px; /* Adjust the height as needed */
   object-fit: cover;
+  border-top-left-radius: 8px; /* Rounded corners for top-left */
+  border-top-right-radius: 8px; /* Rounded corners for top-right */
 }
 
+/* Card body (content) styling */
 .card-body {
   flex-grow: 1;
+  padding: 1rem; /* Adds padding to the body */
+  background-color: var(--surface-color); /* Matches the surface color for a cohesive look */
+  color: var(--default-color); /* Ensure the text color is the appropriate contrast */
 }
 
+/* Card footer styling */
 .card-footer {
   flex-shrink: 0;
+  padding: 0.75rem 1rem; /* Adds padding to the footer */
+  background-color: var(--surface-color); /* Matches the surface color */
+  border-top: 1px solid #B0BEC5; /* Light border between the body and footer */
+  color: var(--default-color); /* Ensure the footer text is appropriately colored */
 }
+
+/* Make the entire card clickable */
+.card-link {
+  text-decoration: none;
+  color: inherit; /* Inherits the text color from the parent */
+}
+
+/* Hover effect for 3D look */
+.card:hover {
+  transform: translateY(-10px) scale(1.05); /* Slight raise and zoom for hover effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow on hover */
+}
+
+/* Optional: Slight zoom on image during hover */
+.card img {
+  transition: transform 0.3s ease;
+}
+
+/* Fix text color: Ensure all text inside cards is black */
+.card .card-title,
+.card .card-text {
+  color: var(--default-color); /* Ensures card text uses default text color */
+}
+
+/* Optional: Remove the default link color and underline inside the card */
+.card-link:hover {
+  color: inherit; /* Maintains the card's text color */
+  text-decoration: none; /* Removes underline on hover */
+}
+
+/* Ensure the text inside the card is aligned properly */
+.card-body,
+.card-footer {
+  text-align: center; /* Center-align text in the body and footer */
+}
+
+/* Optional: Adjust heading color inside the card */
+.card .card-title {
+  color: var(--heading-color); /* Use a dark grayish color for titles */
+  font-weight: 600; /* Make titles stand out more */
+}
+
 
 .pdf-container {
   width: 100%;
@@ -791,3 +857,188 @@
   text-decoration: none;
 }
 
+/* Ensure the section uses flexbox for centering content */
+.section.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0; /* Add padding for spacing */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Ensures text inside the container is centered */
+}
+
+/* Style for the table */
+/* Style for the table */
+.table {
+  width: 100%;
+  max-width: 1000px; /* Increased width for better readability */
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff; /* White background for the table */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+  border-collapse: collapse; /* Ensures table borders don't overlap */
+}
+
+/* Table Header */
+.table th {
+  background-color: #f8f9fa; /* Light gray for header */
+  color: #333; /* Dark text color for contrast */
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 15px; /* Adds padding inside header cells */
+  border-top-left-radius: 8px; /* Rounded top-left corner */
+  border-top-right-radius: 8px; /* Rounded top-right corner */
+  border-bottom: 1px solid #ddd; /* Soft border under the header */
+}
+
+/* Table Body */
+.table td {
+  text-align: center;
+  padding: 10px 15px; /* Adds padding inside body cells */
+  border-bottom: 1px solid #f1f1f1; /* Soft gray border between rows */
+  color: #555; /* Slightly lighter text color */
+}
+
+/* Hover effect on rows for interactivity */
+.table tr:hover {
+  background-color: #f1f1f1; /* Light gray background on hover */
+  cursor: pointer; /* Indicates interactivity */
+}
+
+/* Alternate row colors to enhance readability */
+.table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Very light gray background for odd rows */
+}
+
+/* Optional: For the last row (to remove the border at the bottom) */
+.table tbody tr:last-child td {
+  border-bottom: 0; /* Removes the border for the last row */
+}
+
+/* Optional: Increase font size for readability */
+.table th, .table td {
+  font-size: 14px; /* Slightly larger text for readability */
+}
+
+/* Optional: Light border for the table */
+.table {
+  border: 1px solid #ddd; /* Light border around the entire table */
+}
+
+/* Optional: Styling for the text inside the .text-center class */
+.text-center {
+  max-width: 800px; /* Optional: restricts text width for readability */
+  margin: 0 auto;
+}
+
+/* Container for social icons */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Reduced gap between the icons */
+  margin-top: 20px;
+}
+
+/* Style for each individual social icon link */
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Ensures icons are centered */
+  text-decoration: none; /* Removes underline from links */
+  color: #fff; /* White color for icons */
+  font-size: 20px; /* Icon size */
+  padding: 8px; /* Reduced padding for smaller buttons */
+  background-color: #333; /* Dark background for icons */
+  border-radius: 50%; /* Circular background */
+  transition: background-color 0.3s, transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* Icon styling */
+.social-icon i {
+  font-size: 18px; /* Slightly smaller icon size */
+}
+
+/* Hover effect: Darker background and scale */
+.social-icon:hover {
+  background-color: #555; /* Slightly lighter background on hover */
+  transform: translateY(-2px); /* Reduced "lift" effect on hover */
+}
+
+/* Optional: Add a subtle animation for the hero text */
+.typed-cursor {
+  font-size: 24px; /* Slightly larger cursor for emphasis */
+  color: #fff; /* White color for the cursor */
+}
+
+
+/* Card Styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #B0BEC5; /* Border color complements the light background */
+  border-radius: 8px;
+  background-color: var(--surface-color); /* Soft background for cards */
+}
+
+/* Card body (content) styling */
+.card-body {
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: var(--surface-color); /* Same soft background for card body */
+  color: var(--default-color); /* Use darker gray-blue text color */
+}
+
+/* Card footer styling */
+.card-footer {
+  flex-shrink: 0;
+  padding: 0.75rem 1rem;
+  background-color: var(--surface-color); /* Soft background for footer */
+  border-top: 1px solid #B0BEC5;
+  color: var(--default-color);
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  background-color: #f9f9f9; /* Light gray background for table */
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd; /* Soft border for table cells */
+}
+
+th {
+  background-color: #e3e3e3; /* Light gray background for table headers */
+  color: var(--heading-color); /* Darker color for header text */
+}
+
+tr:nth-child(even) {
+  background-color: #f5f5f5; /* Slightly darker shade for alternate rows */
+}
+
+tr:hover {
+  background-color: #e0e0e0; /* Hover effect for rows */
+}
+
+/* Link Styling */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover {
+  color: var(--accent-color); /* Accent color for hover */
+}
