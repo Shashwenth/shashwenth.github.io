@@ -33,6 +33,7 @@
   --heading-color: #263238; /* Deep Blue-Gray for headings - not too harsh, but still readable */
   --accent-color: #00695C; /* A slightly muted teal color for accents - stands out without being too bold */
   --contrast-color: #ffffff; /* Deep Blue-Gray for headings - not too harsh, but still readable */
+  --underline-color: black
 }
 
 /* Dark Background */
@@ -42,6 +43,7 @@
   --heading-color: #f1f2f6; /* Very light gray/white for headings to stand out against the dark background */
   --surface-color: #34495e; /* Slightly lighter dark gray-blue for cards or boxed sections */
   --contrast-color: #ffffff; /* High contrast color for key elements like buttons or links */
+  --underline-color: white
 }
 
 
@@ -497,7 +499,7 @@
 
 .hero p span {
   letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
+  
 }
 
 .hero .social-links {
@@ -554,7 +556,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 2px;
-  background-color: #34b7a7;
+  background-color: var(--underline-color);
 }
 
 .timeline {
@@ -567,7 +569,7 @@
   content: '';
   position: absolute;
   width: 2px;
-  background-color: #34b7a7;
+  background-color: var(--underline-color);
   top: 0;
   bottom: 0;
   left: 50%;

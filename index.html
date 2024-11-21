@@ -5,6 +5,45 @@
 </head>
 
 <style>
+
+.skills-section {
+  padding: 2rem;
+  background-color: #C0CBD1;
+}
+.skill-category {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.skills-section ul {
+  padding: 0;
+}
+.skills-section li {
+  list-style: none;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+.skills-section li i {
+  margin-right: 0.5rem;
+  color: black; /* Icon Color */
+}
+
+
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1; /* Ensures the ul stretches to fill the column height */
+}
+
+
     .dropdown-submenu {
         position: relative;
         }
@@ -126,64 +165,55 @@
           </span>
         </div>
         <br>
-        <div class="text-center">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Programming Languages</th>
-                <th scope="col">Libraries / Frameworks</th>
-                <th scope="col">Tools / Platforms</th>
-                <th scope="col">Databases</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Programming Languages -->
-              <tr>
-                <td>Java (8+)</td>
-                <td>SpringBoot</td>
-                <td>Kafka</td>
-                <td>MySQL</td>
-              </tr>
-              <tr>
-                <td>JavaScript (ES6)</td>
-                <td>Flask</td>
-                <td>Docker</td>
-                <td>PostgreSQL</td>
-              </tr>
-              <tr>
-                <td>Python</td>
-                <td>Node.js</td>
-                <td>Git</td>
-                <td>MongoDB</td>
-              </tr>
-              <tr>
-                <td>C</td>
-                <td>React.js</td>
-                <td>Postman</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Ruby</td>
-                <td>Express.js</td>
-                <td>AWS</td>
-                <td></td>
-              </tr>
-              <!-- Tools / Platforms -->
-              <tr>
-                <td></td>
-                <td>Spring MVC</td>
-                <td>Tableau BI</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Tailwind CSS</td>
-                <td>Kubernetes</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="skills-section">
+          <div class="container">
+            <div class="row d-flex">
+              <div class="col-md-6 col-lg-3 d-flex flex-column">
+                <h4 class="skill-category">Programming Languages</h4>
+                <ul class="list-unstyled flex-grow-1">
+                  <li><i class="fab fa-java"></i> Java (8+)</li>
+                  <li><i class="fab fa-js"></i> JavaScript (ES6)</li>
+                  <li><i class="fab fa-python"></i> Python</li>
+                  <li><i class="fas fa-code"></i> C</li>
+                  <li><i class="fas fa-gem"></i> Ruby</li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3 d-flex flex-column">
+                <h4 class="skill-category">Libraries / Frameworks</h4>
+                <ul class="list-unstyled flex-grow-1">
+                  <li><i class="fas fa-leaf"></i> SpringBoot</li>
+                  <li><i class="fab fa-python"></i> Flask</li>
+                  <li><i class="fab fa-node"></i> Node.js</li>
+                  <li><i class="fab fa-react"></i> React.js</li>
+                  <li><i class="fas fa-columns"></i> Express.js</li>
+                  <li><i class="fas fa-leaf"></i> Tailwind CSS</li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3 d-flex flex-column">
+                <h4 class="skill-category">Tools / Platforms</h4>
+                <br>
+                <ul class="list-unstyled flex-grow-1">
+                  <li><i class="fab fa-docker"></i> Docker</li>
+                  <li><i class="fas fa-database"></i> Kafka</li>
+                  <li><i class="fab fa-aws"></i> AWS</li>
+                  <li><i class="fas fa-table"></i> Tableau BI</li>
+                  <li><i class="fas fa-database"></i> Kubernetes</li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-lg-3 d-flex flex-column">
+                <h4 class="skill-category">Databases</h4>
+                <br>
+                <ul class="list-unstyled flex-grow-1">
+                  <li><i class="fas fa-database"></i> MySQL</li>
+                  <li><i class="fas fa-database"></i> PostgreSQL</li>
+                  <li><i class="fas fa-database"></i> MongoDB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+        
+        
       </div>
     </section>
     
